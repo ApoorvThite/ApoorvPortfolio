@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apoorv Thite | Portfolio Exchange</title>
+        <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+</head>
+<body data-mode="general"> <!-- Default mode is now general -->
+
+    <!-- Recruiter Toolkit Sidebar -->
+    <aside id="recruiter-toolkit" class="recruiter-toolkit">
+        <h3 class="toolkit-title">Recruiter Toolkit</h3>
+        <button id="export-pager-btn" class="toolkit-button">Export 1-Pager</button>
+        <button class="toolkit-button">Send Project Bundle</button>
+        <button class="toolkit-button">Book 15-min Slot</button>
+    </aside>
+
+    <header class="exchange-header">
+        <div class="logo">
+            <h1>Apoorv Thite Exchange</h1>
+            <div id="mode-switcher" class="mode-switcher">
+                <button data-mode="recruiter">Recruiter</button>
+                <button data-mode="alumni">Alumni</button>
+            </div>
+        </div>
+                <nav id="main-nav" class="main-nav">
+            <a href="#home" class="nav-item active">Home</a>
+            <a href="#projects" class="nav-item">Projects</a>
+            <a href="#experience" class="nav-item">Experience</a>
+            <a href="#research" class="nav-item">Research Papers</a>
+            <a href="#blog" class="nav-item">Blogs</a>
+            <a href="#contact" class="nav-item">Contact</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- 1. Home Page (Opening Bell + Analyst Report) -->
+        <section id="home" class="content-section">
+            <div id="hero" class="hero-section">
+            <h1 class="hero-headline">Apoorv Thite Exchange</h1>
+            <h2 class="hero-subheadline">Where Projects Trade in Measurable Impact</h2>
+            
+            <div class="counters"> 
+                <div class="counter-item">
+                    <div class="counter-main">
+                        <span class="counter-value"></span>
+                        <div class="sparkline-container" id="sparkline-1"></div>
+                    </div>
+                    <span class="counter-label"></span>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-main">
+                        <span class="counter-value"></span>
+                        <div class="sparkline-container" id="sparkline-2"></div>
+                    </div>
+                    <span class="counter-label"></span>
+                </div>
+                <div class="counter-item">
+                    <div class="counter-main">
+                        <span class="counter-value"></span>
+                        <div class="sparkline-container" id="sparkline-3"></div>
+                    </div>
+                    <span class="counter-label"></span>
+                </div>
+            </div>
+
+            <div class="cta-buttons">
+                <button class="cta-primary">Download Resume</button>
+                <button id="view-projects-btn" class="cta-secondary">View Top Projects</button>
+            </div>
+            </div>
+
+            <section class="profile-summary">
+                <img class="profile-photo" src="https://placehold.co/160x160/1a1a1a/7DF9FF?text=AT" alt="Apoorv Thite headshot" />
+                <div class="profile-details">
+                    <h3 class="profile-name">Apoorv Thite</h3>
+                    <div class="profile-info-row">
+                        <ul class="profile-meta">
+                        <li><strong>Major:</strong> Applied Data Science</li>
+                        <li><strong>Minor:</strong> Economics</li>
+                        <li><strong>GPA:</strong> 3.80</li>
+                        <li><strong>Expected Graduation:</strong> December 2025</li>
+                        <li><strong>Dean's List:</strong> All semesters</li>
+                        <li><strong>Target Roles:</strong> Data Analyst and Data Scientist</li>
+                        </ul>
+                        <div class="profile-links profile-vertical">
+                            <a class="plink" href="resume.pdf" target="_blank" rel="noopener" aria-label="Resume link">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M7 3h7l4 4v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z" stroke="#9aa0a6" stroke-width="1.5"/><path d="M14 3v5h5" stroke="#9aa0a6" stroke-width="1.5"/><path d="M8 12h8M8 16h8" stroke="#9aa0a6" stroke-width="1.5"/></svg>
+                                <span>Resume</span>
+                            </a>
+                            <a class="plink" href="https://github.com/ApoorvThite" target="_blank" rel="noopener" aria-label="GitHub profile">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.42c.58.1.79-.25.79-.56v-2c-3.22.7-3.9-1.4-3.9-1.4-.53-1.36-1.3-1.73-1.3-1.73-1.06-.73.08-.72.08-.72 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.26 3.4.96.1-.76.41-1.26.74-1.55-2.57-.29-5.27-1.28-5.27-5.72 0-1.26.45-2.3 1.2-3.11-.12-.3-.52-1.5.12-3.12 0 0 .98-.31 3.2 1.19.93-.26 1.94-.39 2.94-.39 1 0 2.01.13 2.94.39 2.22-1.5 3.2-1.19 3.2-1.19.64 1.62.24 2.82.12 3.12.75.81 1.2 1.85 1.2 3.11 0 4.45-2.71 5.43-5.29 5.71.42.36.79 1.07.79 2.17v3.22c0 .31.21.66.8.55A11.5 11.5 0 0 0 12 .5Z" fill="#9aa0a6"/></svg>
+                                <span>GitHub</span>
+                            </a>
+                            <a class="plink" href="https://linkedin.com/in/apoorvthite21" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5ZM3.5 8.98h3v11.52h-3V8.98Zm6.09 0h2.88v1.58h.04c.4-.75 1.37-1.54 2.83-1.54 3.03 0 3.59 1.99 3.59 4.58v6.9h-3v-6.11c0-1.46-.03-3.34-2.03-3.34-2.04 0-2.35 1.59-2.35 3.24v6.21h-3V8.98Z" fill="#9aa0a6"/></svg>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a class="plink" href="https://medium.com/@your-handle" target="_blank" rel="noopener" aria-label="Blog">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M4 4h12l4 4v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z" stroke="#9aa0a6" stroke-width="1.5"/><path d="M8 16l3-3 3 3 3-3" stroke="#9aa0a6" stroke-width="1.5"/><path d="M8 8h8" stroke="#9aa0a6" stroke-width="1.5"/></svg>
+                                <span>Blog</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="profile-skills">
+                        <span class="skill-chip">AI/ML</span>
+                        <span class="skill-chip">Data Science</span>
+                        <span class="skill-chip">Full‑Stack</span>
+                        <span class="skill-chip">FinTech</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Me (included in Home) -->
+            <div id="about" class="factsheet">
+                <h2 class="section-title">Company Fact Sheet</h2>
+                <div class="factsheet-grid">
+
+                    <!-- Sector Allocation (Skills) -->
+                    <section class="panel sector-allocation">
+                        <h3 class="panel-title">Sector Allocation</h3>
+                        <div class="donut-wrap">
+                            <svg id="sector-donut" width="220" height="220" viewBox="0 0 220 220" aria-label="Skills allocation donut"></svg>
+                            <div id="donut-tooltip" class="donut-tooltip" role="tooltip"></div>
+                            <div class="insight-box">
+                                <div class="insight-title"><span class="rating-chip rating-strong">Strong Buy</span> Analyst Insight</div>
+                                <p class="insight-text">AI/ML represents the largest allocation in Apoorv’s skill portfolio, driven by research in Parkinson’s detection and applied ML in healthcare. Data Science continues steady growth, with FinTech and Full-Stack supporting diversification.</p>
+                            </div>
+                        </div>
+                        <ul class="donut-legend">
+                            <li data-key="AI/ML" style="--color:#29d391">AI/ML <span class="pct">35%</span></li>
+                            <li data-key="Data Science" style="--color:#7DF9FF">Data Science <span class="pct">25%</span></li>
+                            <li data-key="Full‑Stack" style="--color:#ffd166">Full‑Stack <span class="pct">20%</span></li>
+                            <li data-key="FinTech" style="--color:#ff6b6b">FinTech <span class="pct">20%</span></li>
+                        </ul>
+                    </section>
+
+                    <!-- Quant Ratings (Tech Skills) -->
+                    <section class="panel quant-ratings">
+                        <div class="qr-header">
+                            <h3 class="panel-title">Quant Rating</h3>
+                            <div class="qr-updated">Updated on <span id="qr-date"></span></div>
+                        </div>
+                        <div class="radar-card">
+                            <div id="skills-radar"></div>
+                        </div>
+                        <div class="center-score" id="qr-center">--</div>
+                        <div class="qr-legend">
+                            <span class="pill">AI/ML</span>
+                            <span class="pill">Data Science</span>
+                            <span class="pill">Full‑Stack</span>
+                            <span class="pill">FinTech</span>
+                            <span class="pill">Cloud/DevOps</span>
+                        </div>
+                        <div class="overall-rating">
+                            <strong>Overall Rating:</strong>
+                            <span class="rating-badge rating-strong">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M12 4l6 6h-4v10H10V10H6l6-6z" fill="#1db954"/></svg>
+                                <span id="qr-overall">Strong</span>
+                            </span>
+                        </div>
+                    </section>
+
+                    <!-- Analyst Ratings (Testimonials) -->
+                    <section class="panel analyst-cards">
+                        <h3 class="panel-title">Analyst Ratings</h3>
+                        <div class="cards">
+                            <article class="analyst-card buy">
+                                <div class="face" style="background-image:url('images/professor.jpg')"></div>
+                                <div class="body">
+                                    <span class="badge badge-buy">Strong Buy</span>
+                                    <p>“Apoorv consistently brings data‑driven insights to group projects.”</p>
+                                </div>
+                            </article>
+                            <article class="analyst-card outperform">
+                                <div class="face" style="background-image:url('images/mentor.jpg')"></div>
+                                <div class="body">
+                                    <span class="badge badge-outperform">Outperform</span>
+                                    <p>“Delivered scalable ML pipelines during internship.”</p>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+
+                    <!-- Upcoming Listings (Pipeline) -->
+                    <section class="panel pipeline">
+                        <h3 class="panel-title">Upcoming Listings</h3>
+                        <ul class="pipeline-list">
+                            <li>
+                                <span class="ticker">UrbanIQ</span>
+                                <span class="tag">Coming Soon</span>
+                                <span class="bar"><span style="width:65%"></span></span>
+                            </li>
+                            <li>
+                                <span class="ticker">AI Agent Workbench</span>
+                                <span class="tag">In Progress</span>
+                                <span class="bar"><span style="width:40%"></span></span>
+                            </li>
+                            <li>
+                                <span class="ticker">StartupX</span>
+                                <span class="tag">Coming Soon</span>
+                                <span class="bar"><span style="width:25%"></span></span>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <!-- Recent Headlines (Ticker) -->
+                    <section class="panel headlines-ticker">
+                        <h3 class="panel-title">Recent Headlines</h3>
+                        <div class="ticker" id="news-ticker">
+                            <a href="#">EcoSplit recognized as Top 10 finalist at HackPSU 2025</a>
+                            <a href="#">Parkinson’s AI surpasses industry baseline by +24%</a>
+                            <a href="#">GreenBucks achieves 1,200 active users milestone</a>
+                            <a href="#">RAG Best Practices blog crosses 1k reads</a>
+                        </div>
+                    </section>
+
+                    <!-- Risk Factors (Playful) -->
+                    <aside class="panel risk-boxes">
+                        <h3 class="panel-title">Risk Factors</h3>
+                        <ul class="risk-list">
+                            <li><em>Perfectionist</em> — sometimes overinvests in polish.</li>
+                            <li><em>Always building</em> — portfolio keeps expanding.</li>
+                            <li class="coffee"><em>Coffee dependent</em> ☕</li>
+                        </ul>
+                    </aside>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Projects (Stock Listings) -->
+        <section id="projects" class="content-section">
+            <h2 class="section-title">Stock Listings</h2>
+            <div class="project-listings">
+
+                <!-- Project Card 1 -->
+                <div class="project-card">
+                    <div class="card-header">
+                        <span class="project-ticker">PARK-AI</span>
+                        <span class="project-name">Parkinson's Speech Analysis</span>
+                    </div>
+                    <div class="performance-chart">
+                        <!-- Sparkline chart will be rendered here -->
+                        <div id="sparkline-park-ai"></div>
+                    </div>
+                    <div class="card-body">
+                        <p class="project-description">
+                            <strong>Problem:</strong> Early detection of Parkinson's is challenging. <br>
+                            <strong>Action:</strong> Developed an AI model to analyze speech patterns from patient recordings. <br>
+                            <strong>Result:</strong> Achieved 96% accuracy in distinguishing patients from healthy individuals.
+                        </p>
+                        <p class="analyst-note"><strong>Analyst Note:</strong> Significantly improved baseline detection from 72% to 96%, showcasing strong potential for clinical application.</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="project-links">
+                            <a href="#" class="link-button">GitHub</a>
+                            <a href="#" class="link-button">Live Demo</a>
+                        </div>
+                        <button class="trade-button">Execute Trade</button>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card">
+                    <div class="card-header">
+                        <span class="project-ticker">ECO-SPLIT</span>
+                        <span class="project-name">Smart Expense Splitter</span>
+                    </div>
+                    <div class="performance-chart">
+                        <div id="sparkline-eco-split"></div>
+                    </div>
+                    <div class="card-body">
+                        <p class="project-description">
+                            <strong>Problem:</strong> Splitting shared household expenses is tedious and error-prone. <br>
+                            <strong>Action:</strong> Built a web app that scans receipts and intelligently allocates costs among users. <br>
+                            <strong>Result:</strong> Won Top 10 Finalist at HackPSU 2025 for its intuitive UI and practical utility.
+                        </p>
+                        <p class="analyst-note"><strong>Analyst Note:</strong> Strong user-centric design and rapid prototyping led to high marks in a competitive hackathon environment.</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="project-links">
+                            <a href="#" class="link-button">GitHub</a>
+                            <a href="#" class="link-button">Live Demo</a>
+                        </div>
+                        <button class="trade-button">Execute Trade</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 4. Experience (IPO Prospectus / Market History) -->
+        <section id="experience" class="content-section">
+            <h2 class="section-title">Market History</h2>
+            <div class="experience-timeline">
+
+                <!-- Experience Item 1 -->
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <img src="https://placehold.co/50x50/1f1f1f/7DF9FF?text=C1" alt="Company Logo" class="company-logo">
+                        <div class="experience-info">
+                            <h3 class="role-title">AI Research Intern</h3>
+                            <p class="company-details">Company One | May 2024 – Aug 2024</p>
+                        </div>
+                    </div>
+                    <div class="experience-body">
+                        <ul>
+                            <li><strong>Impact Delivered:</strong> Developed a RAG pipeline that improved document retrieval accuracy by 30%.</li>
+                            <li><strong>KPIs:</strong> Reduced query latency by 500ms through optimized vector indexing strategies.</li>
+                            <li>Contributed to a production-level AI system used by thousands of daily active users.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience Item 2 -->
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <img src="https://placehold.co/50x50/1f1f1f/7DF9FF?text=C2" alt="Company Logo" class="company-logo">
+                        <div class="experience-info">
+                            <h3 class="role-title">Software Engineering Intern</h3>
+                            <p class="company-details">Company Two | May 2023 – Aug 2023</p>
+                        </div>
+                    </div>
+                    <div class="experience-body">
+                        <ul>
+                            <li><strong>Impact Delivered:</strong> Shipped three new features for a customer-facing dashboard using React and TypeScript.</li>
+                            <li><strong>KPIs:</strong> Increased front-end test coverage from 65% to 88%.</li>
+                            <li>Collaborated with a team of 10 engineers in an agile development environment.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 5. Skills (Indices / Sector Performance) -->
+        <section id="skills" class="content-section">
+            <h2 class="section-title">Sector Performance</h2>
+            <div class="skills-indices">
+
+                <!-- Frontend Index -->
+                <div class="skill-index">
+                    <h3 class="index-name">Frontend Index</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">React</span>
+                        <div class="performance-bar"><div class="bar-fill" style="width: 90%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Tailwind CSS</span>
+                        <div class="performance-bar"><div class="bar-fill" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Zustand</span>
+                        <div class="performance-bar"><div class="bar-fill" style="width: 75%;"></div></div>
+                    </div>
+                </div>
+
+                <!-- Data Science Index -->
+                <div class="skill-index">
+                    <h3 class="index-name">Data Science Index</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">Python</span>
+                        <div class="performance-bar"><div class="bar-fill" style="width: 95%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">SQL</span>
+                        <div class="performance-bar"><div class="bar-fill" style="width: 90%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">TensorFlow</span>
+                        <div class="performance-bar"><div class="bar-fill" style="width: 80%;"></div></div>
+                    </div>
+                </div>
+
+                <!-- AI/ML Index -->
+                <div class="skill-index">
+                    <h3 class="index-name">AI/ML Index</h3>
+                    <div class="skill-item">
+                        <span class="skill-name">LangChain</span>
+                        <div class="performance-bar"><div class="bar-fill" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">RAG</span>
+                        <div class="performance-bar"><div class="bar-fill" style="width: 90%;"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">LLMs</span>
+                        <div class="performance-bar"><div class="bar-fill" style="width: 80%;"></div></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 6. Education (Company Fundamentals) -->
+        <section id="education" class="content-section">
+            <h2 class="section-title">Company Fundamentals</h2>
+            <div class="education-card">
+                <div class="education-header">
+                    <h3 class="institution-name">Pennsylvania State University</h3>
+                    <p class="degree-info">Bachelor of Science in Computer Science | Graduated May 2025</p>
+                </div>
+                <div class="company-fundamentals">
+                    <div class="fundamental-item">
+                        <span class="fundamental-label">Market Cap (GPA)</span>
+                        <span class="fundamental-value">3.95 / 4.00</span>
+                    </div>
+                    <div class="fundamental-item">
+                        <span class="fundamental-label">Dividends (Honors)</span>
+                        <span class="fundamental-value">Dean's List, Tau Beta Pi Honor Society</span>
+                    </div>
+                    <div class="fundamental-item">
+                        <span class="fundamental-label">Assets (Relevant Coursework)</span>
+                        <span class="fundamental-value">Data Structures, Algorithms, Artificial Intelligence, Machine Learning, Operating Systems</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- New: Research Papers -->
+        <section id="research" class="content-section" style="display: none;">
+            <h2 class="section-title">Research Papers</h2>
+                        <div class="card-grid">
+                <!-- Research Paper 1 -->
+                <div class="research-card">
+                    <div class="card-header">
+                        <h3 class="paper-title">Generative AI for Parkinson's Disease Detection Using Speech Patterns</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="authors"><strong>Authors:</strong> Apoorv Thite, Jane Doe, John Smith</p>
+                        <p class="publication"><strong>Publication:</strong> Journal of Medical AI Research (JMAIR), Vol. 5, 2025</p>
+                        <p class="abstract"><strong>Abstract:</strong> We introduce a novel approach using generative adversarial networks (GANs) to augment limited datasets of speech recordings from Parkinson's patients. Our model improves the accuracy of early-stage detection classifiers from a baseline of 72% to 96%.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="link-button">View PDF</a>
+                        <a href="#" class="link-button">arXiv</a>
+                    </div>
+                </div>
+
+                <!-- Research Paper 2 -->
+                <div class="research-card">
+                    <div class="card-header">
+                        <h3 class="paper-title">Optimizing RAG Pipelines with Reinforcement Learning</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="authors"><strong>Authors:</strong> Apoorv Thite, Sam Brown</p>
+                        <p class="publication"><strong>Conference:</strong> Proceedings of the AI in Finance Summit (AIFS), 2024</p>
+                        <p class="abstract"><strong>Abstract:</strong> This paper presents a framework for using reinforcement learning to dynamically select the optimal chunk size and retrieval model within a Retrieval-Augmented Generation (RAG) pipeline, reducing latency by 25% while maintaining response accuracy.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="link-button">View PDF</a>
+                        <a href="#" class="link-button">Code</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- New: Blogs -->
+        <section id="blog" class="content-section" style="display: none;">
+            <h2 class="section-title">Market Commentary (Blog)</h2>
+                        <div class="card-grid">
+                <!-- Blog Post 1 -->
+                <div class="blog-card">
+                    <div class="card-header">
+                        <h3 class="post-title">The Rise of Multi-Agent AI Systems</h3>
+                        <span class="post-date">September 20, 2025</span>
+                    </div>
+                    <div class="card-body">
+                        <p class="post-excerpt">Multi-agent systems are no longer a theoretical concept. From autonomous trading desks to complex logistics management, teams of AI agents are beginning to tackle problems that were previously unsolvable by a single model. This post explores the architecture and implications...</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="link-button">Read Full Commentary</a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="blog-card">
+                    <div class="card-header">
+                        <h3 class="post-title">Is Your Data Ready for the RAG Revolution?</h3>
+                        <span class="post-date">August 15, 2025</span>
+                    </div>
+                    <div class="card-body">
+                        <p class="post-excerpt">Retrieval-Augmented Generation (RAG) has become the de facto standard for building context-aware LLM applications. However, the performance of a RAG system is only as good as the data it retrieves. Here’s a checklist for preparing your knowledge base...</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="link-button">Read Full Commentary</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. Contact (Closing Bell) -->
+        <section id="contact" class="content-section">
+            <h2 class="section-title">Closing Bell</h2>
+            <div class="contact-container">
+                <p class="contact-cta">📈 Want to invest in my skills? Let’s connect.</p>
+                <form class="trade-submission-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="e.g., Jane Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="e.g., jane.doe@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Trade Order (Message)</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Enter your message or inquiry..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-trade-button">Submit Trade</button>
+                </form>
+                <div class="social-links">
+                    <a href="#" class="social-icon">LinkedIn</a>
+                    <a href="#" class="social-icon">GitHub</a>
+                    <a href="#" class="social-icon">Email</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="ticker-tape-footer">
+        <div class="ticker-tape">
+            <span>PARK-AI <span class="gain">▲</span> ACCURACY 72% → 96%</span>
+            <span>ECO-SPLIT <span class="gain">▲</span> TOP 10 FINALIST @ HACKPSU</span>
+            <span>PROJECT SENTINEL <span class="gain">▲</span> 500+ ACTIVE USERS</span>
+            <span>DEAN'S LIST <span class="gain">▲</span> 4 CONSECUTIVE SEMESTERS</span>
+        </div>
+    </footer>
+
+    <audio id="opening-chime" src="https://cdn.pixabay.com/audio/2021/08/04/audio_bb630cc098.mp3" preload="auto"></audio>
+    <script src="js/script.js"></script>
+
+
+    <!-- Recruiter Agent Modal -->
+    <div id="recruiter-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-header">
+                <h3 class="modal-title">Recruiter Agent: 1-Pager Export</h3>
+            </div>
+            <div class="modal-body">
+                <p>Paste a job description below to generate a tailored 1-page resume.</p>
+                <textarea id="job-description" rows="8" placeholder="Paste job description here..."></textarea>
+                <button id="generate-report-button" class="cta-primary">Generate Report</button>
+                <div id="recruiter-output">
+                    <!-- Agent's report will appear here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Demo Agent Modal -->
+    <div id="demo-modal" class="modal-overlay" style="display: none;">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-header">
+                <h3 class="modal-title">Executing Trade: <span id="modal-ticker"></span></h3>
+            </div>
+            <div class="modal-body">
+                <p><strong>Demo Agent Initializing...</strong></p>
+                <div id="demo-output">
+                    <!-- Agent's analysis and demo will appear here -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
